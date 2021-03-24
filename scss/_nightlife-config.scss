@@ -1,0 +1,88 @@
+$background-color:linear-gradient(90deg, #434343, #29323c);
+$club-container-background-color: #ebdfdfda;
+$club-container-text-part-color: #1e252c;
+
+@mixin club-container($background-image,$index){
+        
+        
+        background: $club-container-background-color;
+        
+
+        box-shadow: 0 5px 25px 0 
+        rgba(0,0,0,.25);
+        
+        display:flex;
+        flex-direction: row;
+
+        
+        .picture-#{$index} {
+            position:relative;
+            flex:4;
+            background-image: url($background-image);
+            filter: blur(3px);
+            -webkit-filter: blur(3px);
+            
+            background-size: cover;
+            margin: 0.5rem;
+            box-shadow: 0 5px 15px 0 rgba(0,0,0,.25);
+            transition: filter;
+            &.focused-on{
+                filter:none;
+            }
+        }
+        .text-#{$index}{
+            position: relative;
+            flex:3;
+            background:$club-container-text-part-color;
+            margin: 0.5rem;
+            box-shadow: 0 5px 15px 0 rgba(0,0,0,.25);
+            transition-property: flex;
+            transition-duration:400ms;
+            box-shadow: 0 5px 15px 0 rgba(0,0,0,.25);
+            overflow-y: scroll;
+
+            display: flex;
+            flex-direction: column;
+            
+
+            
+            
+
+            h1{
+                text-align: center;
+                font-size: 3rem;
+            }
+            p{
+                font-size:2rem;
+                margin-left:2rem;
+                margin-right:2rem;
+                text-indent: 1.5rem;
+            }
+            a{
+                
+                top:50%;
+                left:50%;
+                
+                text-decoration:none;
+                text-align:center;
+
+                
+                font-size: 2rem;
+                -webkit-appearance: button;
+                -moz-appearance: button;
+                appearance: button;
+                padding:1rem;
+                background-color:rgba(51, 39, 71, 0.61);
+                border-radius: 5%;
+                color:black;
+
+                box-shadow: 0 5px 15px 0 rgba(0,0,0,.25);
+                
+            }
+            
+            &.close{
+                flex:2;
+            }
+        }
+    }
+

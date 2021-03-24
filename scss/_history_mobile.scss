@@ -1,0 +1,92 @@
+@import 'config';
+@import 'media_query';
+
+//Widescreens
+@include mediaXl {
+    
+    
+
+}
+
+@include mediaMd {
+    .menu-btn{
+        &.close{
+            left: 41vh;
+        }}
+        .sidebar{
+            &.show{
+                width:40vh;
+                transform: translateX(25vh);
+    
+            }
+            &-header{
+                font-size: 1rem;
+            }
+
+            
+        }
+        .main{
+            .container{
+                h1{
+                    font-size: 2.5rem;
+                }
+            }
+        }
+    }
+   
+
+
+
+
+
+
+
+//Smartphones
+@include mediaSm{
+    
+    
+    .menu-btn{
+        &.close{
+            left: 41vh;
+        }}
+        .sidebar{
+            &.show{
+                width:40vh;
+                transform: translateX(25vh);
+    
+            }
+            &-header{
+                font-size:1rem;
+            }
+            
+        }
+
+    
+    .main{
+    .container{
+        h1{
+            font-size: 1.7rem;
+        }
+        .headerr{
+            margin-left:0.5rem;
+            margin-right:0.5rem;
+            font-size: 1.5rem;
+        }
+        p{
+            font-size: 1rem;
+            margin-left: 0;
+            margin-right: 0;
+            
+        }
+        
+    }
+    .footer{
+        font-size : 1.5rem;
+    }
+
+}
+
+}
+    
+    
+

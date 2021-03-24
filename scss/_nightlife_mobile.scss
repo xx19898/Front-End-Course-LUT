@@ -1,0 +1,110 @@
+@import 'media_query';
+
+//Widescreens
+@include mediaXl {
+
+}
+
+@include mediaMd{
+    .sidebar{
+        &.show{
+            width:40vh;
+            transform: translateX(25vh);
+
+        }
+        &-header{
+            font-size:1.5rem;
+        }
+    } 
+    .menu-btn{
+        &.close{
+            left: 41vh;
+        }
+    }
+
+    .main{
+
+    
+        .club-container-1{
+            flex-direction:column;
+            .text-1{
+                p{
+                    font-size: 1.7rem;
+                }
+            }
+        }
+        .club-container-2{
+            flex-direction:column;
+            .text-2{
+                p{
+                    font-size: 1.7rem;
+                }
+            }
+            
+        }
+        .club-container-3{
+            flex-direction:column;
+            .text-3{
+                p{
+                    font-size: 1.7rem;
+                }
+            }
+            
+        }
+        
+    }
+}
+
+
+
+
+//Smartphones
+@include mediaSm{
+    //sidebar
+    .sidebar{
+        &.show{
+            width:40vh;
+            transform: translateX(25vh);
+
+        }
+        &-header{
+            font-size:1rem;
+        }
+    } 
+    .menu-btn{
+        &.close{
+            left: 41vh;
+        }
+    }
+    .main{
+
+    
+    .club-container-1{
+        flex-direction:column;
+        .text-1{
+            p{
+                font-size: 1.7rem;
+            }
+        }
+    }
+    .club-container-2{
+        flex-direction:column;
+        .text-2{
+            p{
+                font-size: 1.7rem;
+            }
+        }
+        
+    }
+    .club-container-3{
+        flex-direction:column;
+        .text-3{
+            p{
+                font-size: 1.7rem;
+            }
+        }
+        
+    }
+    
+}
+}

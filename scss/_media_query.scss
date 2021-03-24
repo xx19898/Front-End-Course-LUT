@@ -1,0 +1,25 @@
+@mixin font{
+    font-family: 'Merriweather', serif;
+}
+
+
+
+
+@mixin mediaSm {
+    @media screen and (max-width: 449px){
+        @content;
+    }
+}
+
+@mixin mediaMd{
+    @media screen and (min-width: 450px ) and (max-width: 1170px){
+        @content;
+    }
+}
+
+
+@mixin mediaXl {
+    @media screen and (min-width: 1171px){
+        @content;
+    }
+}

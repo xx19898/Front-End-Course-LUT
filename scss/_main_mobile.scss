@@ -1,0 +1,65 @@
+@import 'media_query';
+
+@include mediaSm{
+    .sidebar{
+        &.show{
+            width:40vh;
+            transform: translateX(25vh);
+        }
+    } 
+    .menu-btn{
+        &.close{
+            left: 41vh;
+        }
+    }
+    .main{
+        grid-template-rows: 1fr 400px auto 400px 400px 500px 100px ;
+        #picture-3{
+            grid-column: 2/10;
+            grid-row: 5 / 6;
+
+        }
+        #picture-4{
+            grid-column: 2/10;
+            grid-row: 6 / 7
+        }
+        #welcome-text{
+            font-size: 2rem;
+        }
+        #container-1{
+            p{
+                font-size:1.4rem;
+            }
+        }
+        .footer{
+            font-size:1 rem;
+        }
+    }
+
+}
+@include mediaMd{
+    .sidebar{
+        &.show{
+            width:40vh;
+            transform: translateX(25vh);
+        }
+    } 
+    .menu-btn{
+        &.close{
+            left: 41vh;
+        }
+    }
+    .main{
+        #container-1{
+            p{
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+
+@include mediaXl {
+    
+    
+
+}
