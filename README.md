@@ -1,0 +1,1 @@
+If you want to test the website yourself, go to ""xx19898.github.io". If you want to launch the website locally - download the dist folder and open the index.html file within the dist folder with your internet browser of choice.
